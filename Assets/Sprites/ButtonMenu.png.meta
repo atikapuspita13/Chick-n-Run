@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Layer 9 copy 2_0
+      name: TitleText
       rect:
         serializedVersion: 2
         x: 0
@@ -124,7 +124,7 @@ TextureImporter:
         width: 655
         height: 170
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -137,15 +137,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 9 copy 2_1
+      name: Menu1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 200
+        x: 1
+        y: 201
         width: 295
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,15 +158,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 9 copy 2_2
+      name: Menu4
       rect:
         serializedVersion: 2
         x: 360
-        y: 200
+        y: 201
         width: 320
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +179,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 9 copy 2_3
+      name: Menu2
       rect:
         serializedVersion: 2
         x: 0
@@ -187,7 +187,7 @@ TextureImporter:
         width: 295
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 9 copy 2_4
+      name: Menu5
       rect:
         serializedVersion: 2
         x: 360
@@ -208,7 +208,7 @@ TextureImporter:
         width: 320
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,15 +221,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 9 copy 2_5
+      name: Menu3
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 295
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,7 +242,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 9 copy 2_6
+      name: Menu6
       rect:
         serializedVersion: 2
         x: 360
@@ -250,7 +250,7 @@ TextureImporter:
         width: 320
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,13 +273,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Layer 9 copy 2_6: -872906786
-      Layer 9 copy 2_5: 1493788762
-      Layer 9 copy 2_4: -739819601
-      Layer 9 copy 2_0: 675829052
-      Layer 9 copy 2_3: -1697308395
-      Layer 9 copy 2_2: 395668962
-      Layer 9 copy 2_1: -712091805
+      Menu2: -1697308395
+      TitleText: 675829052
+      Menu1: -712091805
+      Menu4: 395668962
+      Menu6: -872906786
+      Menu3: 1493788762
+      Menu5: -739819601
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
