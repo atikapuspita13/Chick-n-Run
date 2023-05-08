@@ -11,7 +11,6 @@ public class PlayerAnimator : MonoBehaviour
 
 
     [SerializeField] private PlayerController playerController;
-    [SerializeField] private PlayerLife playerLife;
 
     private Animator animator;
 
@@ -22,9 +21,11 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Update()
     {
-        animator.SetBool(IS_DEATH_DRIFTAWAY, playerLife.deathByDriftAway);
-        animator.SetBool(IS_DEATH_CAR, playerLife.deathByCar);
-        animator.SetBool(IS_DEATH_DROWN, playerLife.deathByCar);
+
+        animator.SetBool(IS_DEATH_DRIFTAWAY, PlayerLife.instance.deathByDriftAway);
+        animator.SetBool(IS_DEATH_CAR, PlayerLife.instance.deathByCar);
+        animator.SetBool(IS_DEATH_DROWN, PlayerLife.instance.deathByDrown);
+
 
         if (playerController == null) return;
         animator.SetBool(IS_MOVING, playerController.IsMoving());

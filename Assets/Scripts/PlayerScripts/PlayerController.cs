@@ -34,6 +34,9 @@ public class PlayerController : MonoBehaviour
     private float scorePos;
     private static int score;
 
+    // On Die
+    [SerializeField] private GameObject splashParticle;
+
     private void Awake()
     {
         // I made raycastDistance depends on moveDistance to make it 'game-designer's friendly' code
@@ -46,6 +49,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        splashParticle.SetActive(false);
+
         scorePos = 0;
         score = 0;
     }
@@ -60,8 +65,6 @@ public class PlayerController : MonoBehaviour
     {
         if (!isMoving)
         {
-            // Just in case nilainya sedikit keubah karna pake rigidbody, jadinya aku lakukan pembulatan
-
 
             // Move Input
             if (Input.GetKey(KeyCode.W))
@@ -126,7 +129,8 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
-                    print("DIE");
+                    splashParticle.SetActive(true);
+                    PlayerLife.instance.deathByDrown = true;
                     PlayerLife.instance.Die();
                     PlayerLife.instance.deathByDrown = true;
                 }
