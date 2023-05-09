@@ -37,6 +37,7 @@ public class PlayerLife : MonoBehaviour
 
     public void Die()
     {
+        FindObjectOfType<CinemachineVirtualCamera>().Follow = null;
         playerController.enabled = false;
         GameManager.instance.GameOver();
     }

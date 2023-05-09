@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
         {
 
             // Move Input
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rotationDir = 0;
 
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
                 isMoving = true;
             }
 
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 rotationDir = 180;
 
@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
                 isMoving = true;
             }
 
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 rotationDir = -90;
 
@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
                 isMoving = true;
             }
 
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 rotationDir = 90;
 
@@ -119,6 +119,7 @@ public class PlayerController : MonoBehaviour
                 isMoving = true;
             }
 
+            // Check On Water
             bool detectWater = Physics.Raycast(this.transform.position, -this.transform.up, raycastDistance, waterPlatform);
             if (detectWater)
             {

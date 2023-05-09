@@ -7,6 +7,17 @@ public class RoadPlatform : MonoBehaviour
     [SerializeField] private LayerMask road;
     [SerializeField] private GameObject roadline;
 
+    [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private GameObject[] spawnObjects;
+
+    private int spawnPointIndex;
+    private int spawnObjectIndex;
+
+    private float spawnTime;
+    private float elapsedTime;
+
+    private float carSpeed;
+
     private bool isActive;
 
     private void Update()
@@ -17,5 +28,10 @@ public class RoadPlatform : MonoBehaviour
         {
             isActive = true;
         }
+    }
+
+    public float GetCarSpeed()
+    {
+        return carSpeed;
     }
 }

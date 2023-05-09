@@ -1541,7 +1541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 945218c032e79ba4e95c8e9eeac63b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTime: 0.5
+  moveTime: 0.2
   moveDistance: 5
   raycastPos: {fileID: 972441585}
   rigidObject:
@@ -7318,7 +7318,7 @@ MonoBehaviour:
   - {fileID: 5251663865724276972, guid: 28dc8090f753b45498dfa29ac046fe17, type: 3}
   - {fileID: 7756524057820000462, guid: 242d0c2e2ed7aa045bb272d0cb00cc63, type: 3}
   - {fileID: 5201346998075443262, guid: eeab401446dbb74449920770574eb8dc, type: 3}
-  maxChild: 20
+  maxChild: 30
 --- !u!4 &1632265166
 Transform:
   m_ObjectHideFlags: 0
