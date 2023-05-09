@@ -25,7 +25,7 @@ public class RoadPlatform : MonoBehaviour
         spawnTime = Random.Range(3f, 5f);
         //spawnPointIndex = Random.Range(0, spawnPoints.Length);
         spawnObjectIndex = Random.Range(0, spawnObjects.Length);
-        carSpeed = Random.Range(10f, 20f);
+        carSpeed = Random.Range(15f, 25f);
         elapsedTime = spawnTime;
 
         if (transform.position.z % 10 == 0)

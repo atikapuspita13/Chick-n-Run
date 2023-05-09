@@ -9904,6 +9904,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8589016143587581005, guid: efa102f0a1b7c6c4d937b61916bac5d9, type: 3}
+      propertyPath: m_TagString
+      value: Killer_DriftAway
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efa102f0a1b7c6c4d937b61916bac5d9, type: 3}
 --- !u!4 &2740958791019846752 stripped
@@ -9973,6 +9977,10 @@ PrefabInstance:
     - target: {fileID: 8589016143587581005, guid: efa102f0a1b7c6c4d937b61916bac5d9, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8589016143587581005, guid: efa102f0a1b7c6c4d937b61916bac5d9, type: 3}
+      propertyPath: m_TagString
+      value: Killer_DriftAway
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efa102f0a1b7c6c4d937b61916bac5d9, type: 3}
