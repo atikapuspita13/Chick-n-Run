@@ -21,7 +21,6 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Update()
     {
-
         animator.SetBool(IS_DEATH_DRIFTAWAY, PlayerLife.instance.deathByDriftAway);
         animator.SetBool(IS_DEATH_CAR, PlayerLife.instance.deathByCar);
         animator.SetBool(IS_DEATH_DROWN, PlayerLife.instance.deathByDrown);

@@ -1552,7 +1552,7 @@ MonoBehaviour:
     m_Bits: 1024
   waterPlatform:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 16
   playerVisual: {fileID: 346024301}
   splashParticle: {fileID: 1403737776}
 --- !u!4 &858508563

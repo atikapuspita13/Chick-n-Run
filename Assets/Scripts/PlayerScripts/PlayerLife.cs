@@ -7,8 +7,6 @@ public class PlayerLife : MonoBehaviour
 {
     public static PlayerLife instance;
 
-
-
     private PlayerController playerController;
 
     public bool deathByDriftAway { get; private set; } = false;
@@ -23,16 +21,16 @@ public class PlayerLife : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //if (other.gameObject.tag == "Killer_DriftAway")
-        //{
-        //    Die();
-        //    FindObjectOfType<CinemachineVirtualCamera>().Follow = null;
-        //}
-        //else if (other.gameObject.tag == "Killer_Car")
-        //{
-        //    Die();
-        //    deathByCar = true;
-        //}
+        if (other.gameObject.tag == "Killer_DriftAway")
+        {
+            Die();
+        }
+        else if (other.gameObject.tag == "Killer_Car")
+        {
+            Die();
+            transform.position = other.transform.position;
+            deathByCar = true;
+        }
     }
 
     public void Die()

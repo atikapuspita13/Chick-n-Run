@@ -1139,6 +1139,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   roadline: {fileID: 1264522786084177968}
+  spawnPoints:
+  - {fileID: 3367199118923751176}
+  - {fileID: 6871862815218551598}
+  spawnObjects:
+  - {fileID: 2284380035487830099, guid: 214f8a1f2de321a4584f9059702c2601, type: 3}
+  - {fileID: 3183267155427211253, guid: fb19320919519b04cbae5b6118644200, type: 3}
+  - {fileID: 651454121716666506, guid: 4af3f06ca7723c8448bf1e5f8e0902ee, type: 3}
 --- !u!1 &7756524057941924292
 GameObject:
   m_ObjectHideFlags: 0

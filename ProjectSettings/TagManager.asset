@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Platform
+  - Killer_Car
+  - Killer_DriftAway
   layers:
   - Default
   - TransparentFX
@@ -15,10 +17,10 @@ TagManager:
   - RigidObject
   - Grass
   - Road
-  - WaterPlatform
+  - 
   - MovingPlatform
-  - 
-  - 
+  - Killer_DriftAway
+  - Killer_Car
   - 
   - 
   - 
