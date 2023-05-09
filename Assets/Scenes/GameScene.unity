@@ -681,7 +681,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 483298574}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1058540592}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: OnMute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &483298574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2407,6 +2419,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298f9527eba244345a6fa865ebb335bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &933534662
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1659247817404192066, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a21547e103bc564b831999288973e9d, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2568,6 +2637,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5251663865724276971, guid: 28dc8090f753b45498dfa29ac046fe17, type: 3}
   m_PrefabInstance: {fileID: 549004091}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1058540592 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1659247817404192076, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+  m_PrefabInstance: {fileID: 933534662}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289fadb1a933b0647a22191e853f4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1062241801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2715,7 +2795,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1070424918}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1058540592}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: OnUnmute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1070424918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2886,6 +2978,7 @@ GameObject:
   - component: {fileID: 1350080742}
   - component: {fileID: 1350080741}
   - component: {fileID: 1350080745}
+  - component: {fileID: 1350080746}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2994,6 +3087,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yourScoreDisplay: {fileID: 3325550}
   bestScoreDisplay: {fileID: 0}
+--- !u!114 &1350080746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350080740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cfbd50bdd0fe459f838f223179534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muteButton: {fileID: 483298571}
+  unmuteButton: {fileID: 1070424915}
 --- !u!1 &1403737776
 GameObject:
   m_ObjectHideFlags: 0
