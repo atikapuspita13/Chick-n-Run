@@ -53,6 +53,8 @@ public class PlayerController : MonoBehaviour
 
         scorePos = 0;
         score = 0;
+
+        AudioManager.instance.Play();
     }
 
     void Update()
@@ -133,7 +135,6 @@ public class PlayerController : MonoBehaviour
                     splashParticle.SetActive(true);
                     PlayerLife.instance.deathByDrown = true;
                     PlayerLife.instance.Die();
-                    PlayerLife.instance.deathByDrown = true;
                 }
             }
             else
