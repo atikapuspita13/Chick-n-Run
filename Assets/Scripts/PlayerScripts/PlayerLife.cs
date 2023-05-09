@@ -9,7 +9,6 @@ public class PlayerLife : MonoBehaviour
 
     private PlayerController playerController;
 
-    public bool isDead { get; private set; } = false;
     public bool deathByDriftAway { get; private set; } = false;
     public bool deathByCar { get; private set; } = false;
     public bool deathByDrown { get; set; } = false;
@@ -31,6 +30,7 @@ public class PlayerLife : MonoBehaviour
             Die();
             transform.position = other.transform.position;
             deathByCar = true;
+            AudioManager.instance.OnCarCrash();
         }
     }
 
@@ -39,6 +39,5 @@ public class PlayerLife : MonoBehaviour
         FindObjectOfType<CinemachineVirtualCamera>().Follow = null;
         playerController.enabled = false;
         GameManager.instance.GameOver();
-        isDead = true;
     }
 }

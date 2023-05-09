@@ -135,6 +135,7 @@ public class PlayerController : MonoBehaviour
                     splashParticle.SetActive(true);
                     PlayerLife.instance.deathByDrown = true;
                     PlayerLife.instance.Die();
+                    AudioManager.instance.OnDrown();
                 }
             }
             else

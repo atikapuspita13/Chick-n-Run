@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        AudioManager.instance.Play();
+    }
+
     // Called form Play in Menu and Restart in Game Scene
     public void StartGame()
     {

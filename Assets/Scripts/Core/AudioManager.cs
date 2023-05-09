@@ -7,9 +7,12 @@ public class AudioManager : MonoBehaviour
     // Singleton
     public static AudioManager instance { get; private set; }
 
-    [SerializeField] private AudioClip audioClip;
+    [SerializeField] private AudioClip drownSFX;
+    [SerializeField] private AudioClip carCrashSFX;
+    [SerializeField] private GameObject sfx;
 
     private AudioSource audioSource;
+    private AudioSource audioSourceSFX;
 
     private PlayerLife player;
 
@@ -27,22 +30,7 @@ public class AudioManager : MonoBehaviour
         }
 
         audioSource = GetComponent<AudioSource>();
-    }
-
-    private void Update()
-    {
-        if(player == null)
-        {
-            player = FindObjectOfType<PlayerLife>();
-        }
-        else
-        {
-            if (player.isDead)
-            {
-                audioSource.Stop();
-                audioSource.PlayOneShot(audioClip);
-            }
-        }
+        audioSourceSFX = sfx.GetComponent<AudioSource>();
     }
 
     public void Play()
@@ -51,15 +39,30 @@ public class AudioManager : MonoBehaviour
         {
             audioSource.Play();
         }
+        audioSourceSFX.Stop();
     }
 
     public void OnMute()
     {
         audioSource.mute = true;
+        audioSourceSFX.mute = true;
     }
 
     public void OnUnmute()
     {
         audioSource.mute = false;
+        audioSourceSFX.mute = false;
+    }
+
+    public void OnDrown()
+    {
+        audioSource.Stop();
+        audioSourceSFX.PlayOneShot(drownSFX, 0.3f);
+    }
+
+    public void OnCarCrash()
+    {
+        audioSource.Stop();
+        audioSourceSFX.PlayOneShot(carCrashSFX);
     }
 }
