@@ -47,20 +47,30 @@ public class AudioManager : MonoBehaviour
 
     public void OnMute()
     {
+        foreach (AudioListener listener in FindObjectsOfType<AudioListener>())
+        {
+            listener.enabled = false;
+        }
+
         isMuted = true;
 
         instance.audioSource.mute = true;
         instance.audioSourceSFX.mute = true;
-        instance.audioListener.enabled = false;
+        //instance.audioListener.enabled = false;
     }
 
     public void OnUnmute()
     {
+        foreach (AudioListener listener in FindObjectsOfType<AudioListener>())
+        {
+            listener.enabled = true;
+        }
+
         isMuted = false;
 
         instance.audioSource.mute = false;
         instance.audioSourceSFX.mute = false;
-        instance.audioListener.enabled = true;
+        //instance.audioListener.enabled = true;
     }
 
     public void OnDrown()
