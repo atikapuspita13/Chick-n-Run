@@ -9,9 +9,6 @@ public class CornerUI : MonoBehaviour
 
     void Start()
     {
-        muteButton.SetActive(true);
-        unmuteButton.SetActive(false);
-
         if (AudioManager.instance.IsMuted())
         {
             muteButton.SetActive(false);

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class PlayerController : MonoBehaviour
 
     private float rotationDir;
 
+    // Sfx
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip[] chickenSFX;
+
     // ScoreCounter
     private float scorePos;
     private static int score;
@@ -53,6 +58,8 @@ public class PlayerController : MonoBehaviour
 
         scorePos = 0;
         score = 0;
+
+        audioSource.volume = AudioManager.instance.audioSourceSFX.volume * 0.66f;
     }
 
     void Update()
@@ -78,6 +85,7 @@ public class PlayerController : MonoBehaviour
                 newPos = startPos + new Vector3(0, 0, moveDistance);
                 elapsedTime = 0.0f;
                 isMoving = true;
+                audioSource.PlayOneShot(chickenSFX[Random.Range(0, chickenSFX.Length)]);
             }
 
             if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
@@ -91,6 +99,7 @@ public class PlayerController : MonoBehaviour
                 newPos = startPos + new Vector3(0, 0, -moveDistance);
                 elapsedTime = 0.0f;
                 isMoving = true;
+                audioSource.PlayOneShot(chickenSFX[Random.Range(0, chickenSFX.Length)]);
             }
 
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
@@ -104,6 +113,7 @@ public class PlayerController : MonoBehaviour
                 newPos = startPos + new Vector3(-moveDistance, 0, 0);
                 elapsedTime = 0.0f;
                 isMoving = true;
+                audioSource.PlayOneShot(chickenSFX[Random.Range(0, chickenSFX.Length)]);
             }
 
             if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
@@ -117,6 +127,7 @@ public class PlayerController : MonoBehaviour
                 newPos = startPos + new Vector3(moveDistance, 0, 0);
                 elapsedTime = 0.0f;
                 isMoving = true;
+                audioSource.PlayOneShot(chickenSFX[Random.Range(0, chickenSFX.Length)]);
             }
 
             // Check On Water
@@ -146,6 +157,7 @@ public class PlayerController : MonoBehaviour
         // Move Execution
         if (isMoving)
         {
+
             print(rotationDir);
             playerVisual.localRotation = Quaternion.Euler(0, rotationDir, 0);
             print("Move");
