@@ -53,8 +53,6 @@ public class PlayerController : MonoBehaviour
 
         scorePos = 0;
         score = 0;
-
-        AudioManager.instance.Play();
     }
 
     void Update()

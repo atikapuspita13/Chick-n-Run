@@ -369,7 +369,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 185221038}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 588308915}
+        m_TargetAssemblyTypeName: CornerUI, Assembly-CSharp
+        m_MethodName: OnMute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &185221038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,6 +1205,7 @@ GameObject:
   - component: {fileID: 588308913}
   - component: {fileID: 588308912}
   - component: {fileID: 588308911}
+  - component: {fileID: 588308915}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1285,6 +1298,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &588308915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588308910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cfbd50bdd0fe459f838f223179534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muteButton: {fileID: 185221035}
+  unmuteButton: {fileID: 1900846546}
 --- !u!1 &608006997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,7 +1322,6 @@ GameObject:
   m_Component:
   - component: {fileID: 608007000}
   - component: {fileID: 608006999}
-  - component: {fileID: 608006998}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1303,14 +1329,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &608006998
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608006997}
-  m_Enabled: 1
 --- !u!20 &608006999
 Camera:
   m_ObjectHideFlags: 0
@@ -1658,6 +1676,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1659247817404192076, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: OnPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &704165035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1696,6 +1726,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704165032}
   m_CullTransparentMesh: 1
+--- !u!1001 &744775034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1659247817404192066, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659247817404192077, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a21547e103bc564b831999288973e9d, type: 3}
 --- !u!1 &783409064
 GameObject:
   m_ObjectHideFlags: 0
@@ -3310,6 +3397,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1659247817404192076, guid: 1a21547e103bc564b831999288973e9d, type: 3}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: OnPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1559726471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3856,7 +3955,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1900846549}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 588308915}
+        m_TargetAssemblyTypeName: CornerUI, Assembly-CSharp
+        m_MethodName: OnUnmute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1900846549
 MonoBehaviour:
   m_ObjectHideFlags: 0

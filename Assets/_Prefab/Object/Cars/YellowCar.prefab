@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 1888911816233212024}
   m_Layer: 6
   m_Name: YellowCar
-  m_TagString: Killer_Car
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,6 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logLifetime: 15
+  carVolume: {fileID: 1888911816233212024}
 --- !u!65 &82226434121062918
 BoxCollider:
   m_ObjectHideFlags: 0

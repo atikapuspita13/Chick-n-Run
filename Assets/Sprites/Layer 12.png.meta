@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7dce25a32f1679a48bd66965085cefce
+guid: 0ddccbb022c19ca4395d64fa18f9cd62
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 80
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,55 +116,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pause
+      name: Layer 12_1
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 375
+        width: 320
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbbcca999845df49b4703822c928498
+      internalID: -2100236552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 12_2
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 325
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e92ddc3f8ce95544a299535fd9bea2c
+      internalID: 87977493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 12_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 60
-        width: 45
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd33dc171b5076f44ba489d5fd3d7724
-      internalID: 670041142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unmuted
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 60
-        width: 45
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04459f468929c0f47b8ba8cfa00b2688
-      internalID: 1610589577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Restart
-      rect:
-        serializedVersion: 2
-        x: 1
         y: 0
-        width: 45
-        height: 45
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b4586e8f111934439a94328b91defb4
-      internalID: 999011133
+      spriteID: 81b3a46be11948d40bafebc2dcfd926f
+      internalID: -1486900981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muted
+      name: Layer 12_3
       rect:
         serializedVersion: 2
-        x: 54
-        y: 0
-        width: 45
-        height: 45
+        x: 420
+        y: 297
+        width: 310
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f02a9b8a65e6d24797f02095c30ecd2
-      internalID: -213835726
+      spriteID: 7fea2286ecb979f4ba7df333a2450394
+      internalID: -433937144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu
+      name: Layer 12_4
       rect:
         serializedVersion: 2
-        x: 108
-        y: 60
-        width: 45
-        height: 45
+        x: 425
+        y: 269
+        width: 300
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c77db0d912921e47b93b808e5a52568
+      internalID: -44646007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer 12_5
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 35
+        width: 190
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92e1aebfd26a07548a27d4ace78d7d04
-      internalID: -531658162
+      spriteID: 05d31b682f93f234eb8dcfd7ce7ce3a4
+      internalID: -1090957800
       vertices: []
       indices: 
       edges: []
@@ -223,7 +244,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 74c3dfb6add6bbe40b74394425e6744f
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -231,11 +252,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Unmuted: 1610589577
-      Pause: 670041142
-      Muted: -213835726
-      Menu: -531658162
-      Restart: 999011133
+      Layer 12_0: -1486900981
+      Layer 12_2: 87977493
+      Layer 12_4: -44646007
+      Layer 12_1: -2100236552
+      Layer 12_5: -1090957800
+      Layer 12_3: -433937144
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

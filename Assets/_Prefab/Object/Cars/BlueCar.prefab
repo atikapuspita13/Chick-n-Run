@@ -94,6 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logLifetime: 15
+  carVolume: {fileID: 5806350184480291808}
 --- !u!65 &434003601207873609
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Tester : MonoBehaviour
 {
-    BoxCollider[] boxCollider;
+    AudioListener[] boxCollider;
     // Start is called before the first frame update
     void Start()
     {
-        boxCollider = FindObjectsOfType<BoxCollider>();
+        boxCollider = FindObjectsOfType<AudioListener>();
         print(boxCollider.Length);
     }
 

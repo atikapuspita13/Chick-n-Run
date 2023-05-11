@@ -11,10 +11,13 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip carCrashSFX;
     [SerializeField] private GameObject sfx;
 
-    private AudioSource audioSource;
-    private AudioSource audioSourceSFX;
+    public AudioSource audioSource { get; private set; }
+    public AudioSource audioSourceSFX { get; private set; }
+    private AudioListener audioListener;
 
     private PlayerLife player;
+
+    private bool isMuted;
 
     private void Awake()
     {
@@ -31,38 +34,49 @@ public class AudioManager : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
         audioSourceSFX = sfx.GetComponent<AudioSource>();
+        audioListener = GetComponent<AudioListener>();
     }
 
-    public void Play()
+    public void OnPlay()
     {
-        if (!audioSource.isPlaying)
+        if (!instance.audioSource.isPlaying)
         {
-            audioSource.Play();
+            instance.audioSource.Play();
         }
-        audioSourceSFX.Stop();
     }
 
     public void OnMute()
     {
-        audioSource.mute = true;
-        audioSourceSFX.mute = true;
+        isMuted = true;
+
+        instance.audioSource.mute = true;
+        instance.audioSourceSFX.mute = true;
+        instance.audioListener.enabled = false;
     }
 
     public void OnUnmute()
     {
-        audioSource.mute = false;
-        audioSourceSFX.mute = false;
+        isMuted = false;
+
+        instance.audioSource.mute = false;
+        instance.audioSourceSFX.mute = false;
+        instance.audioListener.enabled = true;
     }
 
     public void OnDrown()
     {
-        audioSource.Stop();
-        audioSourceSFX.PlayOneShot(drownSFX, 0.3f);
+        instance.audioSource.Stop();
+        instance.audioSourceSFX.PlayOneShot(drownSFX, 0.4f * instance.audioSourceSFX.volume);
     }
 
     public void OnCarCrash()
     {
-        audioSource.Stop();
-        audioSourceSFX.PlayOneShot(carCrashSFX);
+        instance.audioSource.Stop();
+        instance.audioSourceSFX.PlayOneShot(carCrashSFX, 1.35f * instance.audioSourceSFX.volume);
+    }
+
+    public bool IsMuted()
+    {
+        return isMuted;
     }
 }
