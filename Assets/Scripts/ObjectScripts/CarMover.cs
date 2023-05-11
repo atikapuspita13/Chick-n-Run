@@ -26,5 +26,14 @@ public class CarMover : MonoBehaviour
             transform.Translate(0, 0, roadPlatform.GetCarSpeed() * Time.deltaTime);
             Destroy(gameObject, logLifetime);
         }
+
+        if (AudioManager.instance.IsMuted())
+        {
+            carVolume.mute = true;
+        }
+        else
+        {
+            carVolume.mute = false;
+        }
     }
 }

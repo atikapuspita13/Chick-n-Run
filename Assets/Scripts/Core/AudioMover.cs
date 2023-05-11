@@ -8,10 +8,10 @@ public class AudioMover : MonoBehaviour
 
     void Update()
     {
-        if(player == null)
+        if (player == null)
         {
             player = FindObjectOfType<PlayerController>();
         }
-        transform.position = player.transform.position;
+        else if (player != null) transform.position = player.transform.position;
     }
 }

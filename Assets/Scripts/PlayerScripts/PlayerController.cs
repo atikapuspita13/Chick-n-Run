@@ -66,6 +66,15 @@ public class PlayerController : MonoBehaviour
     {
         HandleMovement();
         HandleScoreAddition();
+
+        if (AudioManager.instance.IsMuted())
+        {
+            audioSource.mute = true;
+        }
+        else
+        {
+            audioSource.mute = false;
+        }
     }
 
     private void HandleMovement()
